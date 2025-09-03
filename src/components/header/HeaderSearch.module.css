@@ -1,0 +1,47 @@
+.header {
+  height: 80px;
+  width: 100%; /* Garante que ocupe toda a largura */
+  background-color: #4b6cb7;
+  border-bottom: 1px solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  padding-left: var(--mantine-spacing-md);
+  padding-right: var(--mantine-spacing-md);
+  /* Removi o margin-bottom porque agora está no AppShell */
+}
+
+.inner {
+  height: 80px; /* Ajustei para corresponder ao header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  display: block;
+  line-height: 1;
+  padding: 8px 12px;
+  border-radius: var(--mantine-radius-sm);
+  text-decoration: none;
+  color: white; /* Mudei para branco para contrastar com o fundo azul */
+  font-size: var(--mantine-font-size-sm);
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Hover em branco transparente */
+}
+
+.search {
+  width: 200px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .search {
+    width: 150px;
+  }
+
+  .links {
+    display: none;
+  }
+}

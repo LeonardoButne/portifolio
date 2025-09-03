@@ -1,0 +1,127 @@
+.inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: calc(var(--mantine-spacing-xl) * 3);
+  padding-bottom: calc(var(--mantine-spacing-xl) * 3);
+  padding: calc(var(--mantine-spacing-xl) * 3) var(--mantine-spacing-xl);
+  padding-left: var(--mantine-spacing-xl);
+  padding-right: var(--mantine-spacing-xl);
+  gap: var(--mantine-spacing-xl);
+  max-width: none;
+}
+
+.content {
+  flex: 1;
+  max-width: 600px;
+  margin-right: calc(var(--mantine-spacing-xl) * 2);
+}
+
+.title {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-family: Outfit, var(--mantine-font-family);
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: var(--mantine-spacing-md);
+}
+
+.control {
+  min-width: 140px;
+}
+
+.imageWrapper {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 400px;
+  height: 400px;
+  border-radius: 50% !important;
+  object-fit: cover;
+  border: 4px solid var(--mantine-color-blue-6);
+  box-shadow: 0 8px 32px rgba(75, 108, 183, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 48px rgba(75, 108, 183, 0.4);
+}
+
+.highlight {
+  position: relative;
+  background: linear-gradient(45deg, var(--mantine-color-blue-6), var(--mantine-color-blue-4));
+  border-radius: var(--mantine-radius-sm);
+  padding: 6px 16px;
+  color: white;
+  font-weight: 600;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 992px) {
+  .inner {
+    flex-direction: column;
+    text-align: center;
+    gap: calc(var(--mantine-spacing-xl) * 2);
+  }
+
+  .content {
+    max-width: 100%;
+    margin-right: 0;
+    order: 2;
+  }
+
+  .imageWrapper {
+    order: 1;
+  }
+
+  .image {
+    border-radius: 50% !important;
+    width: 350px;
+    height: 350px;
+  }
+
+  .title {
+    font-size: 42px;
+  }
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+  .inner {
+    padding-top: calc(var(--mantine-spacing-xl) * 2);
+    padding-bottom: calc(var(--mantine-spacing-xl) * 2);
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .image {
+    border-radius: 50% !important;
+    width: 300px;
+    height: 300px;
+  }
+
+  .control {
+    flex: 1;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .image {
+    border-radius: 50% !important;
+    width: 280px;
+    height: 280px;
+  }
+}
