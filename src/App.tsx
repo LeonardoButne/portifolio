@@ -1,15 +1,11 @@
-import { useState } from 'react';
-import { Container, Text, AppShell } from '@mantine/core';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import { Container, AppShell } from '@mantine/core';
 import './App.css';
 import { HeaderSearch } from './components/header/HeaderSearch';
 import { HeroPortfolio } from './components/hero/HeroPortfolio';
-import { ProjectsSection } from './components/cards/ProjectsSection';
+import { ProjectsSection } from './components/projects/ProjectsSection';
+import { ExperienceSection } from './components/experience/ExperienceSection';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <AppShell
       header={{ height: 80 }}
@@ -30,6 +26,7 @@ function App() {
       <AppShell.Main>
         <Container fluid>
           <HeroPortfolio />
+          <ExperienceSection />
           <ProjectsSection />
         </Container>
       </AppShell.Main>

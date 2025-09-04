@@ -1,6 +1,7 @@
 import { Card, Group, Image, Text, Container, SimpleGrid, Badge, Button } from '@mantine/core';
-import { IconExternalLink, IconBrandGithub } from '@tabler/icons-react';
+import { IconExternalLink } from '@tabler/icons-react';
 import classes from './ProjectsSection.module.css';
+import zapitaLogo from '../../assets/zapita-logo.png';
 
 interface ProjectStat {
   title: string;
@@ -29,9 +30,9 @@ const projects: Project[] = [
     status: 'Concluído',
     progress: 100,
     stats: [
-      { title: 'Downloads', value: '2.5K+' },
-      { title: 'Avaliação', value: '4.8/5' },
-      { title: 'Usuários', value: '1.2K' },
+      { title: 'Downloads', value: '--' },
+      { title: 'Avaliação', value: '--' },
+      { title: 'Usuários', value: '--' },
     ],
   },
   {
@@ -44,9 +45,9 @@ const projects: Project[] = [
     status: 'Em desenvolvimento',
     progress: 85,
     stats: [
-      { title: 'Veículos', value: '150+' },
-      { title: 'Cidades', value: '5' },
-      { title: 'Reservas', value: '320' },
+      { title: 'Veículos', value: '--' },
+      { title: 'Cidades', value: '--' },
+      { title: 'Reservas', value: '--' },
     ],
   },
   {
@@ -54,8 +55,7 @@ const projects: Project[] = [
     title: 'JobBot WhatsApp',
     description:
       'Bot inteligente que envia vagas de emprego personalizadas via WhatsApp baseado no perfil profissional.',
-    image:
-      'https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=720&q=80',
+    image: zapitaLogo,
     technologies: ['Node.js', 'PostgreSQL', 'TypeScript', 'Google Cloud'],
     status: 'Concluído',
     progress: 100,
@@ -76,9 +76,9 @@ const projects: Project[] = [
     status: 'Concluído',
     progress: 100,
     stats: [
-      { title: 'Barbearias', value: '12' },
+      { title: 'Barbearias', value: '1' },
       { title: 'Agendamentos', value: '2.1K' },
-      { title: 'Faturamento', value: 'R$ 45K' },
+      { title: 'Faturamento', value: '+ 540k Mzn' },
     ],
   },
 ];
@@ -133,9 +133,6 @@ function ProjectCard({ project }: ProjectCardProps) {
         <Group gap={8} mt="sm">
           <Button variant="light" size="xs" leftSection={<IconExternalLink size={14} />}>
             Demo
-          </Button>
-          <Button variant="outline" size="xs" leftSection={<IconBrandGithub size={14} />}>
-            Código
           </Button>
         </Group>
       </Card.Section>
