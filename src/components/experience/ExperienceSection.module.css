@@ -11,6 +11,11 @@
   position: relative;
 }
 
+.container {
+  background-color: #363636;
+  max-width: 100% !important;
+}
+
 .title::after {
   content: '';
   position: absolute;

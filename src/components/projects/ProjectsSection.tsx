@@ -1,87 +1,9 @@
 import { Card, Group, Image, Text, Container, SimpleGrid, Badge, Button } from '@mantine/core';
 import { IconExternalLink } from '@tabler/icons-react';
 import classes from './ProjectsSection.module.css';
-import zapitaLogo from '../../assets/zapita-logo.png';
-
-interface ProjectStat {
-  title: string;
-  value: string;
-}
-
-interface Project {
-  id: number;
-  title: string;
-  description: string;
-  image: string;
-  technologies: string[];
-  status: 'Concluído' | 'Em desenvolvimento';
-  progress: number;
-  stats: ProjectStat[];
-}
-
-const projects: Project[] = [
-  {
-    id: 1,
-    title: 'QR Tickets App',
-    description:
-      'Aplicativo mobile para compra e venda de tickets eletrônicos com QR Code. Interface moderna e pagamentos seguros.',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=720&q=80',
-    technologies: ['Flutter', 'Dart', 'Firebase'],
-    status: 'Concluído',
-    progress: 100,
-    stats: [
-      { title: 'Downloads', value: '--' },
-      { title: 'Avaliação', value: '--' },
-      { title: 'Usuários', value: '--' },
-    ],
-  },
-  {
-    id: 2,
-    title: 'CarRental App',
-    description: 'Plataforma completa para aluguel de veículos com sistema de reservas, pagamentos e gestão de frota.',
-    image:
-      'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&auto=format&fit=crop&w=720&q=80',
-    technologies: ['Flutter', 'Node.js', 'MySQL', 'TypeScript'],
-    status: 'Em desenvolvimento',
-    progress: 85,
-    stats: [
-      { title: 'Veículos', value: '--' },
-      { title: 'Cidades', value: '--' },
-      { title: 'Reservas', value: '--' },
-    ],
-  },
-  {
-    id: 3,
-    title: 'JobBot WhatsApp',
-    description:
-      'Bot inteligente que envia vagas de emprego personalizadas via WhatsApp baseado no perfil profissional.',
-    image: zapitaLogo,
-    technologies: ['Node.js', 'PostgreSQL', 'TypeScript', 'Google Cloud'],
-    status: 'Concluído',
-    progress: 100,
-    stats: [
-      { title: 'Usuários', value: '15+' },
-      { title: 'Vagas/dia', value: '50+' },
-      { title: 'Taxa match', value: '93%' },
-    ],
-  },
-  {
-    id: 4,
-    title: 'BarberShop Manager',
-    description:
-      'Sistema web completo para gestão de barbearias com agendamentos, controle financeiro e gestão de clientes.',
-    image:
-      'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&auto=format&fit=crop&w=720&q=80',
-    technologies: ['Node.js', 'PostgreSQL', 'TypeScript', 'Sequelize'],
-    status: 'Concluído',
-    progress: 100,
-    stats: [
-      { title: 'Barbearias', value: '1' },
-      { title: 'Agendamentos', value: '2.1K' },
-      { title: 'Faturamento', value: '+ 540k Mzn' },
-    ],
-  },
-];
+import { Link } from 'react-router-dom';
+import { projects } from '../../data/projectsData';
+import type { Project, ProjectStat } from '../../data/projectsData';
 
 interface ProjectCardProps {
   project: Project;
@@ -131,7 +53,13 @@ function ProjectCard({ project }: ProjectCardProps) {
       <Card.Section className={classes.footer}>
         <div className={classes.stats}>{statsItems}</div>
         <Group gap={8} mt="sm">
-          <Button variant="light" size="xs" leftSection={<IconExternalLink size={14} />}>
+          <Button
+            component={Link}
+            to={`/projects/${project.id}`}
+            variant="light"
+            size="xs"
+            leftSection={<IconExternalLink size={14} />}
+          >
             Demo
           </Button>
         </Group>

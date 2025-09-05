@@ -94,7 +94,7 @@ export function ExperienceSection() {
   ];
 
   return (
-    <Container size="xl" py={60} className={classes.container}>
+    <Container fluid py={60} className={classes.container}>
       <div className={classes.header}>
         <Title order={2} size="h1" mb="xl" ta="center" className={classes.title}>
           Experiência Profissional
