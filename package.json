@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@mantine/core": "^8.2.8",
+    "@mantine/form": "^8.2.8",
     "@mantine/hooks": "^8.2.8",
     "@mantine/notifications": "^8.2.8",
     "@mantinex/mantine-logo": "^2.0.0",

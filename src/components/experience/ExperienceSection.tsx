@@ -78,7 +78,7 @@ export function ExperienceSection() {
       role: 'Software Tester QA',
       name: 'Source Code Solutions',
       email: 'admin@sourcecode.solutions',
-      phone: '+258 84 222 2222',
+      phone: '+258 8* *** ****',
       period: 'Agosto 2025 - Atualmente',
       location: 'Maputo, Moçambique',
       color: 'green',

@@ -23,7 +23,7 @@ export function ProjectDemoPage() {
         {project.title} - Demo
       </Text>
       <SimpleGrid
-        cols={project.gridCols ?? { base: 1, sm: 2, lg: 2 }} // fallback caso não tenha definido
+        cols={project.gridCols ?? { base: 1, sm: 2, lg: 2 }} 
         spacing="lg"
       >
         {project.demoImages?.map((img, index) => (

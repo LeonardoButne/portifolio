@@ -11,10 +11,10 @@
   position: relative;
 }
 
-.container {
+/* .container {
   background-color: #363636;
   max-width: 100% !important;
-}
+} */
 
 .title::after {
   content: '';
@@ -43,12 +43,6 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(
-    90deg,
-    var(--mantine-color-blue-5),
-    var(--mantine-color-green-5),
-    var(--mantine-color-orange-5)
-  );
   opacity: 0;
   transition: opacity 0.3s ease;
 }

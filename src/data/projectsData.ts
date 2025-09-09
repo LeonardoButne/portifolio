@@ -19,6 +19,12 @@ import venus6 from '../assets/venus/image (6).jpeg';
 import venus7 from '../assets/venus/image (7).jpeg';
 import venus8 from '../assets/venus/image (8).jpeg';
 
+import events0 from '../assets/events/1.png';
+import events1 from '../assets/events/2.png';
+import events2 from '../assets/events/3.png';
+import events3 from '../assets/events/4.png';
+import events4 from '../assets/events/5.png';
+
 export interface ProjectStat {
   title: string;
   value: string;
@@ -40,7 +46,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'QR Tickets App',
+    title: 'Events - QR Tickets App',
     description:
       'Aplicativo mobile para compra e venda de tickets eletrônicos com QR Code. Interface moderna e pagamentos seguros.',
     image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=720&q=80',
@@ -52,11 +58,12 @@ export const projects: Project[] = [
       { title: 'Avaliação', value: '--' },
       { title: 'Usuários', value: '--' },
     ],
-    demoImages: ['https://placehold.co/600x400?text=QR+Tickets+1', 'https://placehold.co/600x400?text=QR+Tickets+2'],
+    demoImages: [events2, events3, events4, events1, events0],
+    gridCols: { base: 1, sm: 2, lg: 4 },
   },
   {
     id: 2,
-    title: 'CarRental App',
+    title: 'Koila - CarRental App',
     description: 'Plataforma completa para aluguel de veículos com sistema de reservas, pagamentos e gestão de frota.',
     image:
       'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&auto=format&fit=crop&w=720&q=80',

@@ -4,6 +4,7 @@ import { HeaderSearch } from './components/header/HeaderSearch';
 import { HeroPortfolio } from './components/hero/HeroPortfolio';
 import { ProjectsSection } from './components/projects/ProjectsSection';
 import { ExperienceSection } from './components/experience/ExperienceSection';
+import ContactoWhatsApp from './components/contact-me/contactForm';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <HeroPortfolio />
           <ExperienceSection />
           <ProjectsSection />
+          <ContactoWhatsApp />
         </Container>
       </AppShell.Main>
     </AppShell>
