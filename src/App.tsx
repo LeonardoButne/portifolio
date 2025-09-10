@@ -4,7 +4,6 @@ import { HeaderSearch } from './components/header/HeaderSearch';
 import { HeroPortfolio } from './components/hero/HeroPortfolio';
 import { ProjectsSection } from './components/projects/ProjectsSection';
 import { ExperienceSection } from './components/experience/ExperienceSection';
-// import ContactoWhatsApp from './components/contact-me/contactForm';
 import { PortfolioFooter } from './components/footer/FooterPortifolio';
 
 function App() {
@@ -16,13 +15,7 @@ function App() {
       aside={{ width: 0, breakpoint: 'md', collapsed: { desktop: true, mobile: true } }}
     >
       <AppShell.Header>
-        <HeaderSearch
-          title="Leonardo Benjamim"
-          backgroundColor="#4b6cb7"
-          showLogo={false}
-          showSearch={true}
-          showLinks={true}
-        />
+        <HeaderSearch title="Leonardo Benjamim" backgroundColor="#4b6cb7" showLogo={false} showLinks={true} />
       </AppShell.Header>
 
       <AppShell.Main>
@@ -30,7 +23,6 @@ function App() {
           <HeroPortfolio />
           <ExperienceSection />
           <ProjectsSection />
-          {/* <ContactoWhatsApp /> */}
           <PortfolioFooter />
         </Container>
       </AppShell.Main>
