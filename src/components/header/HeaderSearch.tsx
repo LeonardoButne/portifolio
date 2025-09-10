@@ -1,5 +1,4 @@
-import { IconSearch } from '@tabler/icons-react';
-import { Autocomplete, Burger, Group, Title } from '@mantine/core';
+import { Burger, Group, Title } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { MantineLogo } from '@mantinex/mantine-logo';
 import classes from './HeaderSearch.module.css';
@@ -15,7 +14,6 @@ export function HeaderSearch({
   title = 'Leonardo Benjamim',
   backgroundColor = '#4b6cb7',
   showLogo = false,
-  showSearch = true,
   showLinks = true,
 }) {
   const [opened, { toggle }] = useDisclosure(false);
@@ -45,15 +43,6 @@ export function HeaderSearch({
             <Group ml={50} gap={5} className={classes.links} visibleFrom="sm">
               {items}
             </Group>
-          )}
-          {showSearch && (
-            <Autocomplete
-              className={classes.search}
-              placeholder="Search"
-              leftSection={<IconSearch size={16} stroke={1.5} />}
-              data={['React', 'Angular', 'Vue', 'Next.js', 'Riot.js', 'Blitz.js']}
-              visibleFrom="xs"
-            />
           )}
         </Group>
       </div>

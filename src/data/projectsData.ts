@@ -25,6 +25,11 @@ import events2 from '../assets/events/3.png';
 import events3 from '../assets/events/4.png';
 import events4 from '../assets/events/5.png';
 
+import koila1 from '../assets/koila/image (1).png';
+import koila2 from '../assets/koila/image (2).png';
+import koila3 from '../assets/koila/image (3).png';
+import koila4 from '../assets/koila/image (4).png';
+
 export interface ProjectStat {
   title: string;
   value: string;
@@ -75,7 +80,8 @@ export const projects: Project[] = [
       { title: 'Cidades', value: '--' },
       { title: 'Reservas', value: '--' },
     ],
-    demoImages: ['https://placehold.co/600x400?text=QR+Tickets+1', 'https://placehold.co/600x400?text=QR+Tickets+2'],
+    demoImages: [koila4, koila3, koila1, koila2],
+    gridCols: { base: 1, sm: 2, lg: 4 },
   },
   {
     id: 3,
