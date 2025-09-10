@@ -5,10 +5,10 @@ import { MantineLogo } from '@mantinex/mantine-logo';
 import classes from './HeaderSearch.module.css';
 
 const links = [
-  { link: '/about', label: 'Features' },
-  { link: '/pricing', label: 'Pricing' },
-  { link: '/learn', label: 'Learn' },
-  { link: '/community', label: 'Community' },
+  { link: '/experience', label: 'Experiencia' },
+  { link: '/about', label: 'Sobre' },
+  { link: '/projects', label: 'Projectos' },
+  { link: '/community', label: 'Contactos' },
 ];
 
 export function HeaderSearch({

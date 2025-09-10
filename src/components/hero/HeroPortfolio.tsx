@@ -8,7 +8,7 @@ export function HeroPortfolio() {
     <div className={classes.inner}>
       <div className={classes.content}>
         <Title className={classes.title}>
-          Leonardo Butne <br />
+          Leonardo Benjamim <br />
           Software Developer | Mobile & Web <br />
         </Title>
         <Text c="dimmed" mt="md" size="lg">

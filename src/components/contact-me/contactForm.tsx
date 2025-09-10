@@ -27,7 +27,8 @@ Mensagem: ${mensagem}`;
       <Textarea
         label="Mensagem"
         placeholder="Escreva a sua mensagem"
-        minRows={4}
+        size="xl"
+        minRows={10}
         value={mensagem}
         onChange={(e) => setMensagem(e.currentTarget.value)}
       />

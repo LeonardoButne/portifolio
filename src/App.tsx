@@ -4,7 +4,8 @@ import { HeaderSearch } from './components/header/HeaderSearch';
 import { HeroPortfolio } from './components/hero/HeroPortfolio';
 import { ProjectsSection } from './components/projects/ProjectsSection';
 import { ExperienceSection } from './components/experience/ExperienceSection';
-import ContactoWhatsApp from './components/contact-me/contactForm';
+// import ContactoWhatsApp from './components/contact-me/contactForm';
+import { PortfolioFooter } from './components/footer/FooterPortifolio';
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
           <HeroPortfolio />
           <ExperienceSection />
           <ProjectsSection />
-          <ContactoWhatsApp />
+          {/* <ContactoWhatsApp /> */}
+          <PortfolioFooter />
         </Container>
       </AppShell.Main>
     </AppShell>
