@@ -24,6 +24,9 @@ import events1 from '../assets/events/2.png';
 import events2 from '../assets/events/3.png';
 import events3 from '../assets/events/4.png';
 import events4 from '../assets/events/5.png';
+import events5 from '../assets/events/6.png';
+import events6 from '../assets/events/7.png';
+import events7 from '../assets/events/8.png';
 
 import koila1 from '../assets/koila/image (1).png';
 import koila2 from '../assets/koila/image (2).png';
@@ -63,7 +66,7 @@ export const projects: Project[] = [
       { title: 'Avaliação', value: '--' },
       { title: 'Usuários', value: '--' },
     ],
-    demoImages: [events2, events3, events4, events1, events0],
+    demoImages: [events2, events5, events1, events7, events3, events4, events0, events6],
     gridCols: { base: 1, sm: 2, lg: 4 },
   },
   {
