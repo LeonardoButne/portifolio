@@ -32,6 +32,10 @@ import koila1 from '../assets/koila/image (1).png';
 import koila2 from '../assets/koila/image (2).png';
 import koila3 from '../assets/koila/image (3).png';
 import koila4 from '../assets/koila/image (4).png';
+import koila5 from '../assets/koila/image (5).png';
+import koila7 from '../assets/koila/image (7).png';
+import koila8 from '../assets/koila/image.png';
+import koila9 from '../assets/koila/image (9).png';
 
 export interface ProjectStat {
   title: string;
@@ -83,7 +87,7 @@ export const projects: Project[] = [
       { title: 'Cidades', value: '--' },
       { title: 'Reservas', value: '--' },
     ],
-    demoImages: [koila4, koila3, koila1, koila2],
+    demoImages: [koila4, koila3, koila1, koila8, koila9, koila7, koila5, koila2],
     gridCols: { base: 1, sm: 2, lg: 4 },
   },
   {
